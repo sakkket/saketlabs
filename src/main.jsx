@@ -378,7 +378,7 @@ return ( <main className="page"> <section className="hero"> <div className="hero
       </div>
 
       <img
-        src="/line-qr.png"
+        src="/line-qr-new.png"
         alt="LINE QR Code"
         className="qr-image"
       />
