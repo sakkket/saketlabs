@@ -345,40 +345,98 @@ function DotRunner() {
   );
 }
 
+
 function App() {
-  return (
-    <main className="page-shell" aria-labelledby="site-title">
-      <div className="content-grid">
-        <section className="intro">
-          <p className="eyebrow">SAKET LABS</p>
-          <h1 id="site-title">Building software, AI experiments, and useful tools.</h1>
+return ( <main className="page"> <section className="hero"> <div className="hero-content"> <p className="eyebrow">SAKET LABS</p>
 
-          <p className="coming-soon">
-            Portfolio, projects, photography, and technical writings are coming soon.
-            Until then, take a quick run through the lab.
-          </p>
+      <h1>
+        Your Personal AI Assistant
+      </h1>
 
-          <nav className="links" aria-label="Social links">
-            <a href="https://github.com/sakkket" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/sakket-kumar/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
-          </nav>
-        </section>
+      <p className="description">
+        Running on a Raspberry Pi using local AI models.
+        Ask coding questions, brainstorm ideas, learn new topics,
+        or simply have a conversation.
+      </p>
 
-        <DotRunner />
+      <div className="steps">
+        <h2>Get Started</h2>
+
+        <ol>
+          <li>Open LINE on your phone</li>
+          <li>Scan the QR code</li>
+          <li>Add the assistant as a friend</li>
+          <li>Start chatting</li>
+        </ol>
+      </div>
+    </div>
+
+    <div className="qr-card">
+      <div className="status">
+        <span className="status-dot" />
+        Assistant Online
       </div>
 
-      <footer>© 2026 Saket Kumar</footer>
-    </main>
-  );
+      <img
+        src="/line-qr.png"
+        alt="LINE QR Code"
+        className="qr-image"
+      />
+
+      <h3>Scan & Chat</h3>
+
+      <p>
+        No signup required.
+        <br />
+        Just scan and start talking.
+      </p>
+    </div>
+  </section>
+
+  <section className="features">
+    <div className="feature">
+      <h3>AI Chat</h3>
+      <p>Ask questions and get instant answers.</p>
+    </div>
+
+    <div className="feature">
+      <h3>Coding Help</h3>
+      <p>Programming, debugging and architecture guidance.</p>
+    </div>
+
+    <div className="feature">
+      <h3>Fitness & Health</h3>
+      <p>Workout, nutrition and healthy habit guidance.</p>
+    </div>
+
+    <div className="feature">
+      <h3>Powered Locally</h3>
+      <p>Built with NestJS, LangChain, Ollama and Raspberry Pi.</p>
+    </div>
+  </section>
+
+  <footer className="footer">
+    <a
+      href="https://github.com/sakkket"
+      target="_blank"
+      rel="noreferrer"
+    >
+      GitHub
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/sakket-kumar/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      LinkedIn
+    </a>
+  </footer>
+</main>
+
+);
 }
+
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
